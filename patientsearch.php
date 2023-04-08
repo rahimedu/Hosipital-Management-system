@@ -1,4 +1,14 @@
-
+<!DOCTYPE html>
+ <?php #include("func.php");?>
+<html>
+<head>
+	<title>Patient Details</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<?php
+include("newfunc.php");
+if(isset($_POST['patient_search_submit']))
 {
 	$contact=$_POST['patient_contact'];
 	$query = "select * from patreg where contact= '$contact'";
