@@ -1,4 +1,21 @@
-
+<!DOCTYPE html>
+<?php
+include('func1.php');
+$pid='';
+$ID='';
+$appdate='';
+$apptime='';
+$fname = '';
+$lname= '';
+$doctor = $_SESSION['dname'];
+if(isset($_GET['pid']) && isset($_GET['ID']) && ($_GET['appdate']) && isset($_GET['apptime']) && isset($_GET['fname']) && isset($_GET['lname'])) {
+$pid = $_GET['pid'];
+  $ID = $_GET['ID'];
+  $fname = $_GET['fname'];
+  $lname = $_GET['lname'];
+  $appdate = $_GET['appdate'];
+  $apptime = $_GET['apptime'];
+}
 
 
 
